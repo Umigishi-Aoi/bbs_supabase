@@ -74,11 +74,13 @@ class _MyWidgetState extends State<MyWidget> {
                   onPressed: () async {
                     await widget.supabaseClient.auth.signInWithOAuth(
                       Provider.github,
-                      redirectTo:
-                          'https://umigishi-aoi.github.io/bbs_supabase/',
+
+                      /// When I add this, it work
+                      // redirectTo:
+                      //     'https://umigishi-aoi.github.io/bbs_supabase/',
                     );
                   },
-                  child: const Text('GitHub ログイン'),
+                  child: const Text('GitHub Login'),
                 ),
               ),
             ],
@@ -129,7 +131,7 @@ class _BbsPageState extends State<BbsPage> {
             icon: const Icon(Icons.logout),
           ),
         ],
-        title: const Text('掲示板'),
+        title: const Text('BBS'),
       ),
       body: FutureBuilder(
         future: data,
@@ -138,7 +140,7 @@ class _BbsPageState extends State<BbsPage> {
             return const CircularProgressIndicator();
           }
           if (snapshot.data == null) {
-            return const Text('データがありません');
+            return const Text('No data');
           }
           final list = snapshot.data!.reversed.toList();
 
@@ -245,7 +247,7 @@ class _AddPageState extends State<AddPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('新規投稿'),
+        title: const Text('New Post'),
       ),
       body: Center(
         child: Padding(
@@ -273,7 +275,7 @@ class _AddPageState extends State<AddPage> {
                   }
                   Navigator.pop(context);
                 },
-                child: const Text('投稿する'),
+                child: const Text('Post'),
               ),
             ],
           ),
