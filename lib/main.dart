@@ -72,8 +72,11 @@ class _MyWidgetState extends State<MyWidget> {
                 height: 150,
                 child: ElevatedButton(
                   onPressed: () async {
-                    await widget.supabaseClient.auth
-                        .signInWithOAuth(Provider.github);
+                    await widget.supabaseClient.auth.signInWithOAuth(
+                      Provider.github,
+                      redirectTo:
+                          'https://umigishi-aoi.github.io/bbs_supabase/',
+                    );
                   },
                   child: const Text('GitHub ログイン'),
                 ),
