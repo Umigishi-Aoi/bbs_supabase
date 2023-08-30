@@ -24467,15 +24467,15 @@ break
 case 6:case 1:return A.L(q,r)
 case 2:return A.K(o,r)}})
 return A.M($async$oO,r)},
-GU(a,b,c){var s=0,r=A.N(t.y),q,p,o
-var $async$GU=A.O(function(d,e){if(d===1)return A.K(e,r)
+GU(a,b){var s=0,r=A.N(t.y),q,p,o
+var $async$GU=A.O(function(c,d){if(c===1)return A.K(d,r)
 while(true)switch(s){case 0:o=A
 s=3
-return A.G(a.zn(b,null,c,null),$async$GU)
-case 3:p=o.dJ(e.b,0,null)
+return A.G(a.zn(b,null,null,null),$async$GU)
+case 3:p=o.dJ(d.b,0,null)
 s=4
 return A.G(A.ao2(p,B.Dg,"_self"),$async$GU)
-case 4:q=e
+case 4:q=d
 s=1
 break
 case 1:return A.L(q,r)}})
@@ -41512,7 +41512,7 @@ s=s.as
 new A.hp(s,s.$ti.i("hp<1>")).hZ(new A.ag3(this))
 this.aV()},
 N(a){var s,r,q=this,p=null
-if(q.d!==B.c7)return A.amy(p,A.vi(A.Fd(A.b([A.j9(A.aqd(B.PT,new A.ag1(q)),150,300)],t.F),B.cb,B.ru,B.cF),p,p),p)
+if(q.d!==B.c7)return A.amy(p,A.vi(A.Fd(A.b([A.j9(A.aqd(B.PS,new A.ag1(q)),150,300)],t.F),B.cb,B.ru,B.cF),p,p),p)
 else{s=q.a.c
 r=q.e
 r.toString
@@ -41532,7 +41532,7 @@ var $async$$0=A.O(function(a,b){if(a===1)return A.K(b,r)
 while(true)switch(s){case 0:p=q.a.a.c.Q
 p===$&&A.a()
 s=2
-return A.G(A.GU(p,B.IQ,"https://umigishi-aoi.github.io/bbs_supabase/"),$async$$0)
+return A.G(A.GU(p,B.IQ),$async$$0)
 case 2:return A.L(null,r)}})
 return A.M($async$$0,r)},
 $S:15}
@@ -41541,7 +41541,7 @@ ak(){return new A.MI(B.k)}}
 A.MI.prototype={
 aH(){this.d=this.a.c.EU("bbs").Hl(0,t.j)
 this.aV()},
-N(a){var s=null,r=A.ap8(A.b([A.alZ(s,B.CR,new A.aca(this),s,s)],t.F),B.PS),q=this.d
+N(a){var s=null,r=A.ap8(A.b([A.alZ(s,B.CR,new A.aca(this),s,s)],t.F),B.PT),q=this.d
 q===$&&A.a()
 return A.amy(r,new A.qq(q,new A.acb(),s,t.un),A.aqm(B.CP,!1,new A.acc(this,a)))}}
 A.aca.prototype={
@@ -76706,20 +76706,19 @@ return A.M($async$tM,r)},
 vj(a,b,c,d){return this.a3J(a,b,c,d)},
 a3J(a,b,c,d){var s=0,r=A.N(t.PN),q,p=this,o,n,m,l,k
 var $async$vj=A.O(function(e,f){if(e===1)return A.K(f,r)
-while(true)switch(s){case 0:l=t.N
-k=A.ap(["provider",B.b.gU(a.G().split("."))],l,l)
-k.m(0,"redirect_to",c)
-o=p.ay
-s=o===B.hB?3:4
+while(true)switch(s){case 0:m=t.N
+l=A.ap(["provider",B.b.gU(a.G().split("."))],m,m)
+k=p.ay
+s=k===B.hB?3:4
 break
-case 3:n=A.aIa()
+case 3:o=A.aIa()
 s=5
-return A.G(p.ax.pL("supabase.auth.token-code-verifier",n),$async$vj)
-case 5:m=B.A4.bJ(B.hx.bJ(n))
-k.P(0,A.ap(["flow_type",o.b,"code_challenge",B.kv.glk().bJ(m.a).split("=")[0],"code_challenge_method","s256"],l,l))
-case 4:l=A.D5(null,null,k).f
-if(l==null)l=""
-q=new A.Im(p.e+"/authorize?"+l)
+return A.G(p.ax.pL("supabase.auth.token-code-verifier",o),$async$vj)
+case 5:n=B.A4.bJ(B.hx.bJ(o))
+l.P(0,A.ap(["flow_type",k.b,"code_challenge",B.kv.glk().bJ(n.a).split("=")[0],"code_challenge_method","s256"],m,m))
+case 4:m=A.D5(null,null,l).f
+if(m==null)m=""
+q=new A.Im(p.e+"/authorize?"+m)
 s=1
 break
 case 1:return A.L(q,r)}})
@@ -85430,11 +85429,11 @@ B.P_=new A.p(!0,B.j,null,"Roboto",null,null,null,null,null,null,null,null,null,n
 B.OS=new A.p(!0,B.j,null,"Roboto",null,null,null,null,null,null,null,null,null,null,null,null,null,B.f,null,null,null,"whiteMountainView labelMedium",null,null,null,null)
 B.Os=new A.p(!0,B.j,null,"Roboto",null,null,null,null,null,null,null,null,null,null,null,null,null,B.f,null,null,null,"whiteMountainView labelSmall",null,null,null,null)
 B.PP=new A.cT(B.O7,B.Pt,B.Pa,B.MF,B.P2,B.O1,B.Px,B.Na,B.NH,B.OW,B.Mw,B.Pb,B.P_,B.OS,B.Os)
-B.PQ=new A.jf("\u30c7\u30fc\u30bf\u304c\u3042\u308a\u307e\u305b\u3093",null,null,null,null,null,null,null,null)
-B.PR=new A.jf("\u6295\u7a3f\u3059\u308b",null,null,null,null,null,null,null,null)
-B.PS=new A.jf("\u63b2\u793a\u677f",null,null,null,null,null,null,null,null)
-B.PT=new A.jf("GitHub \u30ed\u30b0\u30a4\u30f3",null,null,null,null,null,null,null,null)
-B.PU=new A.jf("\u65b0\u898f\u6295\u7a3f",null,null,null,null,null,null,null,null)
+B.PQ=new A.jf("No data",null,null,null,null,null,null,null,null)
+B.PR=new A.jf("Post",null,null,null,null,null,null,null,null)
+B.PS=new A.jf("GitHub Login",null,null,null,null,null,null,null,null)
+B.PT=new A.jf("BBS",null,null,null,null,null,null,null,null)
+B.PU=new A.jf("New Post",null,null,null,null,null,null,null,null)
 B.Tl=new A.aaD(0,"system")
 B.HN=new A.j(0.056,0.024)
 B.HD=new A.j(0.108,0.3085)
